@@ -13,3 +13,13 @@ console.log(userId.toFixed(2));
 let isActive = false
 
 isActive = true;
+
+// any
+
+let hero: string;
+
+function getHero() {
+    return "Superman";
+}
+
+hero = getHero();
