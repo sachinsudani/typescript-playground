@@ -1,9 +1,15 @@
-let greetings: string = "Hello, TypeScript!";
+// string
+let greetings = "Hello, TypeScript!";
 
-let myNumber: number = 42;
+const greeting = greetings.toLowerCase();
 
-myNumber = 100;
-console.log(greetings);
-console.log(myNumber);
+console.log(greeting);
 
-export { greetings, myNumber };
+// number
+let userId = 12345.6789;
+console.log(userId.toFixed(2));
+
+// boolean
+let isActive = false
+
+isActive = true;
