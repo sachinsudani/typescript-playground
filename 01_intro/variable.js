@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.myNumber = exports.greetings = void 0;
+var greetings = "Hello, TypeScript!";
+exports.greetings = greetings;
+var myNumber = 42;
+exports.myNumber = myNumber;
+exports.myNumber = myNumber = 100;
+console.log(greetings);
+console.log(myNumber);
