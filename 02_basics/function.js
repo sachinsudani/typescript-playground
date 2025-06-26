@@ -1,7 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addTwoNumbers = addTwoNumbers;
-exports.getUpperCaseString = getUpperCaseString;
 function addTwoNumbers(a, b) {
     return a + b;
 }
@@ -15,7 +13,29 @@ var loginUser = function (name, email, isPaid) {
     if (isPaid === void 0) { isPaid = false; }
     return { name: name, email: email, isPaid: isPaid };
 };
-console.log(addTwoNumbers(5, 10)); // returns 15
-console.log(getUpperCaseString("hello")); // returns "HELLO"
-console.log(getSignUpUser("John Doe", "john@example.com", false)); // returns { name: 'John Doe', email: 'john@example.com', isPaid: false }
-console.log(loginUser("Jane Doe", "jane@example.com")); // returns { name: 'Jane Doe', email: 'jane@example.com', isPaid: false }
+function getValue(value) {
+    if (value > 5) {
+        return true;
+    }
+    else {
+        return "200 OK";
+    }
+}
+var getHello = function (s) {
+    return "Hello " + s;
+};
+var heros = ["thor", "spiderman", "ironman"];
+var numbers = [1, 2, 3, 4, 5];
+heros.map(function (hero) {
+    return "Hero is ".concat(hero);
+});
+numbers.map(function (num) {
+    return "Number is ".concat(num);
+});
+function consoleError(message) {
+    console.error(message);
+}
+function handleError(message) {
+    throw new Error(message);
+}
+handleError("This is an error message");
